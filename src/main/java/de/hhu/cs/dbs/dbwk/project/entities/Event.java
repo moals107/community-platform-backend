@@ -69,10 +69,10 @@ public class Event {
     }
 
     public double getKosten() {
-        return kosten ;
+        return kosten;
     }
 
     public void setKosten(double kosten) {
-        this.kosten = kosten ;
+        this.kosten = kosten;
     }
 }
