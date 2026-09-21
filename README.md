@@ -48,7 +48,7 @@ SQLite Database
 
 The database represents a community platform with entities such as citizens, groups, events, advertisements, messages, commercial providers, locations, professions, skills, ratings and participation relationships.
 
-The original ER model and relational model are included in the [`docs/`](./docs/) directory.
+A compact overview of the main relationships and integrity rules is available in [`docs/database-model.md`](./docs/database-model.md). The executable schema itself is defined in [`schema.sql`](./schema.sql).
 
 ## REST API
 
@@ -75,7 +75,7 @@ Examples of modeled rules include:
 - advertisements with associated messages cannot be deleted
 - group membership is capped through a database trigger
 
-Example data is provided in [`data.sql`](./data.sql), while [`queries.sql`](./queries.sql) contains representative SQL queries.
+Example data is provided in [`data.sql`](./data.sql), while [`queries.sql`](./queries.sql) contains representative SQL queries. The schema, sample data and all three query examples were re-checked successfully with SQLite before publishing this portfolio version.
 
 ## Tech Stack
 
@@ -96,8 +96,7 @@ Example data is provided in [`data.sql`](./data.sql), while [`queries.sql`](./qu
 ```text
 .
 ├── docs/
-│   ├── er-model.graphml
-│   └── relational-model.html
+│   └── database-model.md
 ├── src/main/java/.../
 │   ├── controller/
 │   ├── entities/
